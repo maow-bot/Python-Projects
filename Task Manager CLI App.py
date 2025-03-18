@@ -150,7 +150,6 @@ while True:
             print('Invalid choice. Tasks not saved.')
 
     # 6. Load task file
-    # 6. Load tasks from a file
     elif choice == '6':
         print("\n--- Load Tasks ---")
         print("1. Load from CSV")
@@ -212,6 +211,5 @@ while True:
 
 
 
-### What if I just got the idea or the task pop on my head so I have to input it.
 
 
