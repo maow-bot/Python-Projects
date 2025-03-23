@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background: #545454;
+}
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+}
+
+table, td, th {
+    border: 2px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 25px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+.priority-badge {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.priority-High { background-color: #ff9999; }
+.priority-Medium { background-color: #ffcc99; }
+.priority-Low { background-color: #ffffcc; }

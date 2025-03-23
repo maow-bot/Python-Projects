@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;">Update Task</h1>
+
+    <div class="form">
+        <form action="/update/{{task.id}}" method="POST">
+            <input type="text" name="content" id="content" value="{{task.content}}">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Task Priority</h2>
+        <form action="/update/{{task.id}}" method="POST">
+            <div class="form-group">
+                <label for="priortiy">Priority: (High - Low)</label>
+                <select id="priority" name="priority">
+                    <option value="High" {% if task.priority == High%}selected{% endif %}>1 - High</option>
+                    <option value="Medium" {% if task.priority == Medium%}selected{% endif %}>2 - Medium</option>
+                    <option value="Low" {% if task.priority == Low%}selected{% endif %}>3 - Low</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary">Update Priority</button>
+            <a href="/dashboard" class="btn-secondary">Cancel</a>
+        </form>
+    </div>   
+
+</div>
+{% endblock %}
